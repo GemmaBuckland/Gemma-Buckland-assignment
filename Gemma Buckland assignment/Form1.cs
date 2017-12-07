@@ -12,6 +12,9 @@ namespace Gemma_Buckland_assignment
 {
     public partial class Form1 : Form
     {
+        int total_value;
+        int total_pound;
+
         public Form1()
         {
             InitializeComponent();
@@ -143,5 +146,20 @@ namespace Gemma_Buckland_assignment
             }
         }
 
+        private void RESET_Click(object sender, EventArgs e)
+        {
+            txt_value.Text = "0"; // I have cleared all the text boxes
+            txt_value2.Text = "0";
+            txt_credit.Text = "0";
+            txt_nocredit.Text = "0";
+            label_1p.Text = "0"; // I have set all the labels to the value "0"
+            label_2p.Text = "0";
+            label_5p.Text = "0";
+            label_10p.Text = "0";
+            label_20p.Text = "0";
+            label_50p.Text = "0";
+            label_100p.Text = "0";
+            label_200p.Text = "0";
+        }
     }
 }

@@ -64,15 +64,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_value = new System.Windows.Forms.TextBox();
+            this.txt_value2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pic_10p = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_nocredit = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -108,6 +108,7 @@
             this.RESET.TabIndex = 0;
             this.RESET.Text = "RESET";
             this.RESET.UseVisualStyleBackColor = false;
+            this.RESET.Click += new System.EventHandler(this.RESET_Click);
             // 
             // pic_1p
             // 
@@ -181,7 +182,6 @@
             this.pic_200p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_200p.TabIndex = 12;
             this.pic_200p.TabStop = false;
-    
             // 
             // groupBox1
             // 
@@ -461,8 +461,8 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.txt);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txt_value);
+            this.groupBox2.Controls.Add(this.txt_value2);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -492,20 +492,20 @@
             this.label24.TabIndex = 21;
             this.label24.Text = "p";
             // 
-            // txt
+            // txt_value
             // 
-            this.txt.Location = new System.Drawing.Point(99, 505);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(80, 20);
-            this.txt.TabIndex = 20;
+            this.txt_value.Location = new System.Drawing.Point(99, 505);
+            this.txt_value.Name = "txt_value";
+            this.txt_value.Size = new System.Drawing.Size(80, 20);
+            this.txt_value.TabIndex = 20;
             // 
-            // textBox1
+            // txt_value2
             // 
-            this.textBox1.Location = new System.Drawing.Point(250, 506);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(86, 20);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.Text = "0.00";
+            this.txt_value2.Location = new System.Drawing.Point(250, 506);
+            this.txt_value2.Name = "txt_value2";
+            this.txt_value2.Size = new System.Drawing.Size(86, 20);
+            this.txt_value2.TabIndex = 19;
+            this.txt_value2.Text = "0.00";
             // 
             // label7
             // 
@@ -560,7 +560,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txt_nocredit);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label1);
@@ -572,12 +572,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Credits";
             // 
-            // textBox3
+            // txt_nocredit
             // 
-            this.textBox3.Location = new System.Drawing.Point(248, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(57, 20);
-            this.textBox3.TabIndex = 17;
+            this.txt_nocredit.Location = new System.Drawing.Point(248, 40);
+            this.txt_nocredit.Name = "txt_nocredit";
+            this.txt_nocredit.Size = new System.Drawing.Size(57, 20);
+            this.txt_nocredit.TabIndex = 17;
             // 
             // label3
             // 
@@ -671,15 +671,15 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_credit;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_nocredit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txt_value2;
+        private System.Windows.Forms.TextBox txt_value;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
