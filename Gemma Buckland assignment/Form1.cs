@@ -12,8 +12,9 @@ namespace Gemma_Buckland_assignment
 {
     public partial class Form1 : Form
     {
-        int total_value;
-        int total_pound;
+        Decimal total_pound;
+        int total_pence;
+
 
         public Form1()
         {
@@ -31,7 +32,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_1p.Text);// This will hold the number and change "label_1p"
                 hold_number = hold_number + 1; // Once the 1p is clicked it will increase by +1.
                 label_1p.Text = hold_number.ToString();
-
+                total_pence += 1;// For this i have added 1 to txt_value
+                txt_value.Text = total_pence.ToString(); // For this i have displayed the variable into the text box, txt_value
 
 
 
@@ -54,7 +56,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_2p.Text);// This will hold the number and change "label_2p"
                 hold_number = hold_number + 1; // Once the 2p is clicked it will increase by +2.
                 label_2p.Text = hold_number.ToString();
-
+                total_pence += 2;
+                txt_value.Text = total_pence.ToString();
             }
         }
 
@@ -69,7 +72,10 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_5p.Text);// This will hold the number and change "label_5p"
                 hold_number = hold_number + 1; // Once the 5p is clicked it will increase by +1.
                 label_5p.Text = hold_number.ToString();
+                total_pence += 5;
+                txt_value.Text = total_pence.ToString();
             }
+
         }
         private void pic_10p_Click(object sender, EventArgs e)
         {
@@ -82,6 +88,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_10p.Text);// This will hold the number and change "label_10p"
                 hold_number = hold_number + 1; // Once the 10p is clicked it will increase by +1.
                 label_10p.Text = hold_number.ToString();
+                total_pence += 10;
+                txt_value.Text = total_pence.ToString();
 
             }
         }
@@ -97,6 +105,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_20p.Text);// This will hold the number and change "label_20p"
                 hold_number = hold_number + 1; // Once the 20p is clicked it will increase by +1.
                 label_20p.Text = hold_number.ToString();
+                total_pence += 20;
+                txt_value.Text = total_pence.ToString();
 
             }
         }
@@ -111,6 +121,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_50p.Text);// This will hold the number and change "label_50p"
                 hold_number = hold_number + 1; // Once the 50p is clicked it will increase by +1.
                 label_50p.Text = hold_number.ToString();
+                total_pence += 50;
+                txt_value.Text = total_pence.ToString();
 
 
             }
@@ -128,7 +140,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_100p.Text);// This will hold the number and change "label_100p"
                 hold_number = hold_number + 1; // Once the 100p is clicked it will increase by +1.
                 label_100p.Text = hold_number.ToString();
-
+                total_pound += 1.00m;
+                txt_value.Text = total_pound.ToString();
             }
         }
         private void pic_200p_Click(object sender, EventArgs e)
@@ -142,6 +155,8 @@ namespace Gemma_Buckland_assignment
                 int hold_number = Convert.ToInt32(label_200p.Text);// This will hold the number and change "label_200p"
                 hold_number = hold_number + 1; // Once the 200p is clicked it will increase by +1.
                 label_200p.Text = hold_number.ToString();
+                total_pound += 2.00m;
+                txt_value.Text = total_pound.ToString();
 
             }
         }

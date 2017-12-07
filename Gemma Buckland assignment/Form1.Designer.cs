@@ -627,8 +627,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RESET);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Money Credit Counter v2.0";
             ((System.ComponentModel.ISupportInitialize)(this.pic_1p)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_20p)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_2p)).EndInit();
