@@ -12,8 +12,14 @@ namespace Gemma_Buckland_assignment
 {
     public partial class Form1 : Form
     {
-        Decimal total_pound;
-        int total_pence;
+        Decimal total_pound;//Global Variable to declare
+        int total_pence;//Global Variable
+        int credit;// The amount of credit generated
+        int value;//The value gathered
+
+
+
+       
 
 
         public Form1()
