@@ -130,6 +130,7 @@
             this.pic_20p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_20p.TabIndex = 7;
             this.pic_20p.TabStop = false;
+            this.pic_20p.Click += new System.EventHandler(this.pic_20p_Click_1);
             // 
             // pic_2p
             // 
@@ -151,6 +152,7 @@
             this.pic_50p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_50p.TabIndex = 9;
             this.pic_50p.TabStop = false;
+            this.pic_50p.Click += new System.EventHandler(this.pic_50p_Click_1);
             // 
             // pic_5
             // 
@@ -172,6 +174,7 @@
             this.pic_100p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_100p.TabIndex = 11;
             this.pic_100p.TabStop = false;
+            this.pic_100p.Click += new System.EventHandler(this.pic_100p_Click_1);
             // 
             // pic_200p
             // 
@@ -182,6 +185,7 @@
             this.pic_200p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_200p.TabIndex = 12;
             this.pic_200p.TabStop = false;
+            this.pic_200p.Click += new System.EventHandler(this.pic_200p_Click_1);
             // 
             // groupBox1
             // 
@@ -506,6 +510,7 @@
             this.txt_value2.Size = new System.Drawing.Size(86, 20);
             this.txt_value2.TabIndex = 19;
             this.txt_value2.Text = "0.00";
+            this.txt_value2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label7
             // 
@@ -556,6 +561,7 @@
             this.pic_10p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_10p.TabIndex = 13;
             this.pic_10p.TabStop = false;
+            this.pic_10p.Click += new System.EventHandler(this.pic_10p_Click_1);
             // 
             // groupBox3
             // 
@@ -616,6 +622,7 @@
             this.txt_credit.Size = new System.Drawing.Size(57, 20);
             this.txt_credit.TabIndex = 0;
             this.txt_credit.Text = "0";
+            this.txt_credit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
