@@ -15,7 +15,7 @@ namespace Gemma_Buckland_assignment
         Decimal total_pound;//Global Variable to declare
         int total_pence;//Global Variable
         int credit;// The amount of credit generated
-        int value;//The value gathered
+        int value; // The value gathered
 
 
 
@@ -43,6 +43,14 @@ namespace Gemma_Buckland_assignment
 
                 total_pound += 0.01m;// For this i have added 0.01 to txt_value2
                 txt_value2.Text = total_pound.ToString();
+
+
+                
+
+
+     
+            
+
 
             }
         }
